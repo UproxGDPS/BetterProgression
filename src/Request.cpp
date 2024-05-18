@@ -20,7 +20,7 @@ void Request::performCPRequest() {
     web::AsyncWebRequest()
         .postRequest()
         .bodyRaw(fmt::format("targetAccountID={}&secret={}", accountID, "Wmfd2893gb7"))
-        .fetch("http://www.boomlings.com/database/getGJUserInfo20.php")
+        .fetch("https://projectbdash.com/uproxps/getGJUserInfo20.php")
         .text()
         .then([totalEXP](const std::string& response) {
             
